@@ -73,4 +73,13 @@ public class SecondActivity extends AppCompatActivity {
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        DBHelper dbh = new DBHelper(this);
+        islandList.clear();
+        islandList.addAll(dbh.getAllIslands());
+        caIsland.notifyDataSetChanged();
+    }
 }

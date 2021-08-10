@@ -89,6 +89,7 @@ public class ThirdActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(ThirdActivity.this, "Update failed", Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
 
@@ -144,5 +145,7 @@ public class ThirdActivity extends AppCompatActivity {
                 myDialog.show();
             }
         });
+
+
     }
 }

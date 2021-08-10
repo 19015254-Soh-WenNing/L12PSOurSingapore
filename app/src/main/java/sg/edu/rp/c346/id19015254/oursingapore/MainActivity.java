@@ -58,8 +58,6 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Toast.makeText(MainActivity.this, "Insert failed", Toast.LENGTH_LONG).show();
                 }
-
-
             }
         });
 
